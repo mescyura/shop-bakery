@@ -32,7 +32,20 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open">Замовити дзвінок</button>
+          <button class="header__button button modal-btn-open">
+            Замовити дзвінок
+          </button>
+
+          <button class="header__burger menu-btn-open" type="button">
+            <svg class="icon-menu" width="24" height="24">
+              <use href="/images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -42,6 +55,9 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button class="hero-section__button button modal-btn-open">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -83,7 +99,12 @@
                 обслуговування!
               </p>
             </div>
-            <img src="/images/baker-man.jpg" alt="Чоловік пекар" />
+            <img
+              class="traditions-section__image"
+              srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
+              src="./images/baker-man.jpg"
+              alt="Чоловік пекар"
+            />
           </div>
         </div>
       </section>
@@ -101,7 +122,7 @@
               <article class="chefs-card">
                 <img
                   class="chefs-card__chef-image"
-                  src="/images/Nastia.jpg"
+                  src="./images/Nastia.jpg"
                   alt="Nastia shef"
                 />
                 <div>
@@ -122,7 +143,7 @@
               <article class="chefs-card">
                 <img
                   class="chefs-card__chef-image"
-                  src="/images/Vlad.jpg"
+                  src="./images/Vlad.jpg"
                   alt="Vlad chef"
                 />
                 <div>
@@ -151,7 +172,6 @@
           </h2>
           <div class="formats-section__container">
             <button class="carousel-button">
-              <!-- arrow left -->
               <svg width="16" height="16">
                 <use href="/images/icons.svg#icon-arrow"></use>
               </svg>
@@ -210,7 +230,6 @@
               </li>
             </ul>
             <button class="carousel-button next">
-              <!-- arrow right -->
               <svg width="16" height="16">
                 <use href="/images/icons.svg#icon-arrow"></use>
               </svg>
@@ -326,7 +345,6 @@
               </li>
               <li>
                 <a href="#">
-                  <!-- facebook icon -->
                   <svg class="adress-icon" width="32" height="32">
                     <use href="/images/icons.svg#icon-facebook-logo"></use>
                   </svg>
@@ -334,7 +352,6 @@
               </li>
               <li>
                 <a href="#">
-                  <!-- instagram icon -->
                   <svg class="adress-icon" width="32" height="32">
                     <use href="/images/icons.svg#icon-instagram-logo"></use>
                   </svg>
@@ -408,7 +425,7 @@
         </form>
       </div>
     </div>
-
     <script src="/js/modal.js"></script>
+    <script src="/js/menu-open.js"></script>
   </body>
 </html>
