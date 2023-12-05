@@ -1,0 +1,74 @@
+.footer {
+  position: relative;
+  padding: 32px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url(/images/Footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: '';
+  bottom: 0;
+}
+
+.footer::before {
+  background-image: url('/images/bread-small.png');
+  width: 179px;
+  height: 121px;
+  left: 0;
+}
+
+.footer::after {
+  background-image: url('/images/bread-big.png');
+  width: 378px;
+  height: 187px;
+  right: 0;
+}
+
+.footer-nav,
+.footer-adress {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu,
+.adress-list,
+.adress-info {
+  flex-grow: 1;
+}
+
+.adress-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.adress-link:hover {
+  color: var(--color-primary-green);
+}
+
+.adress-copyright {
+  font-size: 14px;
+  color: var(--color-secondary-light);
+}
+
+.adress-icon {
+  fill: var(--color-primary-light);
+}
+
+.adress-icon:hover {
+  fill: var(--color-primary-green);
+}

@@ -1,0 +1,34 @@
+.shefs-section {
+  &__title {
+    margin: 0 auto 80px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      background-color: var(--color-secondary-light);
+      width: 352px;
+      height: 2px;
+      position: absolute;
+      bottom: 24px;
+    }
+
+    &::before {
+      left: 16px;
+    }
+
+    &::after {
+      right: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+  }
+
+  &__item {
+    flex-basis: calc(50% - 15px);
+  }
+}
