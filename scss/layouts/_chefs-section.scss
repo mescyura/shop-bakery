@@ -1,16 +1,25 @@
 .shefs-section {
   &__title {
-    margin: 0 auto 80px;
+    margin: 0 auto 24px;
     position: relative;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 80px;
+    }
 
     &::before,
     &::after {
+      display: none;
       content: '';
       background-color: var(--color-secondary-light);
       width: 352px;
       height: 2px;
       position: absolute;
       bottom: 24px;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+      }
     }
 
     &::before {
@@ -24,11 +33,19 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 40px 30px;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 40px 30px;
+    }
   }
 
   &__item {
-    flex-basis: calc(50% - 15px);
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc(50% - 15px);
+    }
   }
 }
