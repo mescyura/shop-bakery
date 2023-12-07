@@ -16,7 +16,7 @@
   }
 
   &::before {
-    background-image: url('/images/bread-small-mobile.png');
+    background-image: url('../images/bread-small-mobile.png');
     width: 100px;
     height: 90px;
     right: 0;
@@ -31,7 +31,7 @@
   }
 
   &::after {
-    background-image: url('/images/bread-big-mobile.png');
+    background-image: url('../images/bread-big-mobile.png');
     width: 85px;
     height: 205px;
     top: 0;
