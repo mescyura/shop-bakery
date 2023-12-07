@@ -29,19 +29,47 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="header__button button modal-btn-open">
+          <button class="header__button button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
 
           <button class="header__burger menu-btn-open" type="button">
-            <svg class="icon-menu" width="24" height="24">
+            <svg width="24" height="24">
               <use href="/images/icons.svg#icon-menu"></use>
             </svg>
           </button>
           <div class="mobile-menu">
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
             </button>
+            <a class="mobile-menu__logo" href="/">
+              <img
+                src="./images/logo-dark.svg"
+                alt="Логотип сучасної пекарні"
+              />
+            </a>
+            <ul class="mobile-menu__list">
+              <li>
+                <a class="mobile-menu__link" href="#traditions-section">
+                  Наші традиції
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#chefs-section">
+                  Шеф-кухарі
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#contact-section">
+                  Контакти
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -185,7 +213,7 @@
                       src="./images/Walrus.jpg"
                       alt="Walrus"
                     />
-                    <h3 class="format-card__title">Walrus</h3>
+                    <h3 class="format-card__title" lang="en">Walrus</h3>
                     <div class="format-card__text">
                       <p>Площа: до 120 м2</p>
                       <p>Меню: розширене меню</p>
@@ -204,7 +232,7 @@
                       src="./images/Horseshoe.jpg"
                       alt="Horseshoe"
                     />
-                    <h3 class="format-card__title">Horseshoe</h3>
+                    <h3 class="format-card__title" lang="en">Horseshoe</h3>
                     <div class="format-card__text">
                       <p>Площа: до 25 м2</p>
                       <p>Меню: найпопулярніші позиції меню</p>
@@ -222,7 +250,7 @@
                       src="./images/Handlebar.jpg"
                       alt="Handlebar"
                     />
-                    <h3 class="format-card__title">Handlebar</h3>
+                    <h3 class="format-card__title" lang="en">Handlebar</h3>
                     <div class="format-card__text">
                       <p>Площа: до 15 м2</p>
                       <p>Меню: найпопулярніші позиції меню</p>
@@ -238,7 +266,7 @@
                       src="./images/Walrus.jpg"
                       alt="Walrus"
                     />
-                    <h3 class="format-card__title">Walrus</h3>
+                    <h3 class="format-card__title" lang="en">Walrus</h3>
                     <div class="format-card__text">
                       <p>Площа: до 120 м2</p>
                       <p>Меню: розширене меню</p>
@@ -257,7 +285,7 @@
                       src="./images/Horseshoe.jpg"
                       alt="Horseshoe"
                     />
-                    <h3 class="format-card__title">Horseshoe</h3>
+                    <h3 class="format-card__title" lang="en">Horseshoe</h3>
                     <div class="format-card__text">
                       <p>Площа: до 25 м2</p>
                       <p>Меню: найпопулярніші позиції меню</p>
@@ -275,7 +303,7 @@
                       src="./images/Handlebar.jpg"
                       alt="Handlebar"
                     />
-                    <h3 class="format-card__title">Handlebar</h3>
+                    <h3 class="format-card__title" lang="en">Handlebar</h3>
                     <div class="format-card__text">
                       <p>Площа: до 15 м2</p>
                       <p>Меню: найпопулярніші позиції меню</p>
@@ -306,7 +334,7 @@
       <section class="contact-section section" id="contact-section">
         <div class="container">
           <div class="contact-section__container">
-            <div>
+            <div class="contact-section__form">
               <h2 class="contact-section__title section__title">
                 Приєднуйся до мережі пекарень
               </h2>
@@ -322,6 +350,7 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Ім’я"
+                    required
                   />
                 </div>
                 <div class="contact-section__form-field input">
@@ -334,6 +363,8 @@
                     id="user-tel"
                     name="user-tel"
                     placeholder="Телефон"
+                    pattern="^\+[0-9]{12}"
+                    required
                   />
                 </div>
                 <div class="contact-section__form-field input">
@@ -346,6 +377,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
                 <button class="contact-section__button button" type="submit">
@@ -412,7 +444,7 @@
                   </a>
                 </li>
               </ul>
-              <div>
+              <div class="footer__socials">
                 <a href="#">
                   <svg class="footer__adress-icon" width="32" height="32">
                     <use href="/images/icons.svg#icon-facebook-logo"></use>
@@ -435,13 +467,15 @@
         </div>
       </div>
     </footer>
-     <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
         </button>
-        <h2>Замовити дзвінок</h2>
-        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">Заповни форму, щоб ми звʼязались з тобою!</p>
         <form name="modal-form" autocomplete="off">
           <div class="modal__form-field input">
             <label class="input__label visually-hidden" for="user-name">
@@ -466,6 +500,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
               required
             />
           </div>

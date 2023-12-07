@@ -1,10 +1,10 @@
 @import './utils/fonts';
+@import './utils/variables';
+@import './base';
 @import './utils/texts';
 @import './utils/utils';
-@import './utils/variables';
 @import './utils/backdrop';
 
-@import './base';
 
 @import './components/buttons';
 @import './components/carousel-button';
@@ -14,17 +14,16 @@
 @import './components/links';
 @import './components/pagination';
 
+@import './layouts/section';
 @import './layouts/advantages-section';
-@import './layouts/container';
-@import './layouts/chefs-section';
 @import './layouts/chefs-section';
 @import './layouts/contacts-section';
+@import './layouts/container';
 @import './layouts/footer';
-@import './layouts/formats-section';
 @import './layouts/form-terms';
+@import './layouts/formats-section';
 @import './layouts/header';
 @import './layouts/hero-section';
-@import './layouts/modal';
 @import './layouts/mobile-menu';
-@import './layouts/section';
+@import './layouts/modal';
 @import './layouts/traditions-section';
